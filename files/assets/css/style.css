@@ -397,6 +397,15 @@ aside li {
   .desktop-star {
     display: inline-block;
   }
+
+.hero{
+   padding-left: 15rem;
+}
+
+h1{
+  font-size: 5em;
+}
+
   #third-section {
     display: flex;
     gap: 3rem;
