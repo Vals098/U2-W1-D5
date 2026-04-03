@@ -55,6 +55,15 @@ header {
   display: flex;
   align-items: center;
   padding: 1em;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #191919;
 }
 
 header img {
@@ -314,20 +323,27 @@ aside li {
 .bookmark:hover {
   color: #191919;
 }
+/* scroll event */
+header {
+  background-color: #ffc017;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: white;
+}
+
+header.scrolled button {
+  background-color: #1a8917;
+  color: white;
+}
+
+header.scrolled li:hover {
+  color: #1a8917;
+}
 
 /* tablet MEDIA QUERY */
 @media (min-width: 768px) {
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    margin-right: 20px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #191919;
-  }
-
   .hero {
     padding-top: 10rem;
     display: flex;
@@ -358,24 +374,6 @@ aside li {
   .trend {
     width: 45%;
   }
-  /* scroll event */
-  header {
-    background-color: #ffc017;
-    transition: background-color 0.3s ease;
-  }
-
-  header.scrolled {
-    background-color: white;
-  }
-
-  header.scrolled button {
-    background-color: #1a8917;
-    color: white;
-  }
-
-  header.scrolled li:hover {
-    color: #1a8917;
-  }
 }
 
 /* desktop MEDIA QUERY */
@@ -398,13 +396,13 @@ aside li {
     display: inline-block;
   }
 
-.hero{
-   padding-left: 15rem;
-}
+  .hero {
+    padding-left: 15rem;
+  }
 
-h1{
-  font-size: 5em;
-}
+  h1 {
+    font-size: 5em;
+  }
 
   #third-section {
     display: flex;
