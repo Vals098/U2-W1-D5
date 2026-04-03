@@ -45,15 +45,6 @@ header ul li:hover {
   color: #f2f2f2;
 }
 
-aside button:hover {
-  background-color: #9e9e9e;
-  color: white;
-}
-
-aside ul li:hover {
-  color: #191919;
-}
-
 /* --------------------------- */
 /* Default: MOBILE MEDIA QUERY */
 /* --------------------------- */
@@ -367,7 +358,7 @@ aside li {
   .trend {
     width: 45%;
   }
-  /* event */
+  /* scroll event */
   header {
     background-color: #ffc017;
     transition: background-color 0.3s ease;
@@ -380,6 +371,10 @@ aside li {
   header.scrolled button {
     background-color: #1a8917;
     color: white;
+  }
+
+  header.scrolled li:hover {
+    color: #1a8917;
   }
 }
 
@@ -419,5 +414,14 @@ aside li {
 
   aside {
     flex-basis: 320px;
+  }
+
+  aside button:hover {
+    background-color: #9e9e9e;
+    color: white;
+  }
+
+  aside ul li:hover {
+    color: #191919;
   }
 }
