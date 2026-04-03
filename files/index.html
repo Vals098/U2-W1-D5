@@ -36,7 +36,8 @@
         <div class="hero-content">
           <h1>Stay curious.</h1>
           <p>
-            Discover stories, thinking, and expertise from writers on any topic.
+            Discover stories, thinking, and expertise <br />
+            from writers on any topic.
           </p>
           <button>Start Reading</button>
         </div>
@@ -9717,5 +9718,19 @@
         </section>
       </div>
     </main>
+    <script>
+      const header = document.querySelector("header")
+      const hero = document.querySelector(".hero")
+
+      window.addEventListener("scroll", () => {
+        const heroBottom = hero.offsetHeight
+
+        if (window.scrollY > heroBottom) {
+          header.classList.add("scrolled")
+        } else {
+          header.classList.remove("scrolled")
+        }
+      })
+    </script>
   </body>
 </html>

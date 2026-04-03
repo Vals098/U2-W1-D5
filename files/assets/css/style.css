@@ -306,5 +306,96 @@ aside li {
   color: #191919;
 }
 
-
 /* tablet MEDIA QUERY */
+@media (min-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #191919;
+  }
+
+  .hero {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  #Ms,
+  .hiddenlinks {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    height: 100%;
+  }
+
+  header {
+    background-color: #ffc017;
+    transition: background-color 0.3s ease;
+  }
+
+  header.scrolled {
+    background-color: white;
+  }
+
+  #trends {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .trend {
+    width: 45%;
+  }
+}
+
+/* desktop MEDIA QUERY */
+@media (min-width: 992px) {
+  .content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 5rem;
+  }
+
+  #articles {
+    flex: 3;
+  }
+
+  .trend {
+    width: 30%;
+  }
+
+  .hidden-dsk {
+    display: none;
+  }
+  
+  .desktop-star {
+    display: inline-block;
+  }
+  #third-section {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 2rem 1rem;
+  }
+
+  aside {
+    flex: 1;
+    max-width: 350px;
+    flex-grow: 0.4;
+  }
+
+  /* non ho fatto in tempo a fixare */
+
+}
