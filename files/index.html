@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--aggiungi link al reset.css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Medium Clone</title>
   </head>
@@ -30,7 +34,7 @@
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1>Stay Curious.</h1>
+          <h1>Stay curious.</h1>
           <p>
             Discover stories, thinking, and expertise from writers on any topic.
           </p>
@@ -9247,116 +9251,139 @@
       <!-- flex container -->
       <!-- have .desktop-star in display none as default for mobile and tablet Q -->
       <section class="trending">
-        <img src="./assets/imgs/svg/trending.svg" alt="trending" />
-        <!-- inline block -->
-        <h2>TRENDING ON MEDIUM</h2>
-        <!-- trend 1 -->
-        <article class="trend">
-          <div class="trend-number">01</div>
-          <div class="trend-content">
-            <div class="author">
-              <img src="./assets/imgs/image01.jpeg" alt="Tom Cooper PP" />
-              <span>Tom Cooper</span>
+        <div class="logo-title">
+          <img
+            id="trending-logo"
+            src="./assets/imgs/svg/trending.svg"
+            alt="trending"
+          />
+          <!-- inline block -->
+          <h2>TRENDING ON MEDIUM</h2>
+        </div>
+        <div id="trends">
+          <!-- trend 1 -->
+          <article class="trend">
+            <div class="trend-number">01</div>
+            <div class="trend-content">
+              <div class="author">
+                <img src="./assets/imgs/image01.jpeg" alt="Tom Cooper PP" />
+                <span class="bold">Tom Cooper</span>
+              </div>
+              <h3>Ukraine War, 23 October 2022</h3>
+              <div class="info-container">
+                <p class="info">Oct 23 · 5 min read</p>
+              </div>
             </div>
-            <h3>Ukraine War, 23 October 2022</h3>
-            <p class="info">Oct 23 · 5 min read</p>
-          </div>
-        </article>
-        <!-- trend 2 -->
-        <article class="trend">
-          <div class="trend-number">02</div>
-          <div class="trend-content">
-            <div class="author">
-              <img src="./assets/imgs/image02.png" alt="Arthur Hayes" />
-              <span class="bold">Arthur Hayes</span>
-              <span class="in"> in </span>
-              <span class="bold"> Entrepreneur's Handbook</span>
+          </article>
+          <!-- trend 2 -->
+          <article class="trend">
+            <div class="trend-number">02</div>
+            <div class="trend-content">
+              <div class="author">
+                <img src="./assets/imgs/image02.png" alt="Arthur Hayes" />
+                <span class="bold">Arthur Hayes</span>
+                <span> in </span>
+                <span class="bold"> Entrepreneur's Handbook</span>
+              </div>
+              <h3>Comeback</h3>
+              <div class="info-container">
+                <p class="info">Oct 26 · 24 min read</p>
+              </div>
             </div>
-            <h3>Comeback</h3>
-            <p class="info">Oct 26 · 24 min read</p>
-          </div>
-        </article>
-        <!-- trend 3 -->
-        <article class="trend">
-          <div class="trend-number">03</div>
-          <div class="trend-content">
-            <div class="author">
-              <img src="./assets/imgs/image03.jpeg" alt="Tom Cooper SJ" />
-              <span>Tom Cooper</span>
+          </article>
+          <!-- trend 3 -->
+          <article class="trend">
+            <div class="trend-number">03</div>
+            <div class="trend-content">
+              <div class="author">
+                <img src="./assets/imgs/image03.jpeg" alt="Tom Cooper SJ" />
+                <span class="bold">Tom Cooper</span>
+              </div>
+              <h3>
+                How I Learned to Love My Breasts Even Though One Is A Horcrux
+                For Voldemort
+              </h3>
+              <div class="info-container">
+                <p class="info">Oct 26 · 2 min read</p>
+              </div>
             </div>
-            <h3>
-              How I Learned to Love My Breasts Even Though One Is A Horcrux For
-              Voldemort
-            </h3>
-            <p class="info">Oct 26 · 2 min read</p>
-          </div>
-        </article>
-        <!-- ATTENTION!! 
+          </article>
+          <!-- ATTENTION!! 
          trends 4 5 6 have the .desktop-star in display block; -->
-        <!-- trend 4 -->
-        <article class="trend">
-          <div class="trend-number">04</div>
-          <div class="trend-content">
-            <div class="author">
-              <img src="./assets/imgs/image04.png" alt="Frank Mastropolo" />
-              <span class="bold">Frank Mastropolo</span>
-              <span class="in"> in </span>
-              <span class="bold"> The Riffk</span>
+          <!-- trend 4 -->
+          <article class="trend">
+            <div class="trend-number">04</div>
+            <div class="trend-content">
+              <div class="author">
+                <img src="./assets/imgs/image04.png" alt="Frank Mastropolo" />
+                <span class="bold">Frank Mastropolo</span>
+                <span> in </span>
+                <span class="bold"> The Riffk</span>
+              </div>
+              <h3>
+                The Night Paul McCartney Donned a Disguise at Fillmore East
+              </h3>
+              <div class="info-container">
+                <p class="info">Oct 22 · 3 min read</p>
+                <img
+                  class="desktop-star"
+                  src="./assets/imgs/svg/star.svg"
+                  alt="star"
+                />
+              </div>
             </div>
-            <h3>The Night Paul McCartney Donned a Disguise at Fillmore East</h3>
-            <p class="info">Oct 22 · 3 min read</p>
-            <img
-              class="desktop-star"
-              src="./assets/imgs/svg/star.svg"
-              alt="star"
-            />
-          </div>
-        </article>
-        <!-- trend 5 -->
-        <article class="trend">
-          <div class="trend-number">05</div>
-          <div class="trend-content">
-            <div class="author">
-              <img src="./assets/imgs/image05.jpeg" alt="Frank Andrade" />
-              <span class="bold">Frank Andrade</span>
-              <span class="in"> in </span>
-              <span class="bold"> Towards Data Science</span>
+          </article>
+          <!-- trend 5 -->
+          <article class="trend">
+            <div class="trend-number">05</div>
+            <div class="trend-content">
+              <div class="author">
+                <img src="./assets/imgs/image05.jpeg" alt="Frank Andrade" />
+                <span class="bold">Frank Andrade</span>
+                <span> in </span>
+                <span class="bold"> Towards Data Science</span>
+              </div>
+              <h3>
+                5 Python Projects to Automate Your Life: From Beginner to
+                Advanced
+              </h3>
+              <div class="info-container">
+                <p class="info">Oct 13 · 6 min read</p>
+                <img
+                  class="desktop-star"
+                  src="./assets/imgs/svg/star.svg"
+                  alt="star"
+                />
+              </div>
             </div>
-            <h3>
-              5 Python Projects to Automate Your Life: From Beginner to Advanced
-            </h3>
-            <p class="info">Oct 13 · 6 min read</p>
-            <img
-              class="desktop-star"
-              src="./assets/imgs/svg/star.svg"
-              alt="star"
-            />
-          </div>
-        </article>
-        <!-- trend 6 -->
-        <article class="trend">
-          <div class="trend-number">06</div>
-          <div class="trend-content">
-            <div class="author">
-              <img src="./assets/imgs/image06.png" alt="Wesley Smits" />
-              <span class="bold">Wesley Smits</span>
-              <span class="in"> in </span>
-              <span class="bold"> JavaScript in Plain English</span>
+          </article>
+          <!-- trend 6 -->
+          <article class="trend">
+            <div class="trend-number">06</div>
+            <div class="trend-content">
+              <div class="author">
+                <img src="./assets/imgs/image06.png" alt="Wesley Smits" />
+                <span class="bold">Wesley Smits</span>
+                <span> in </span>
+                <span class="bold"> JavaScript in Plain English</span>
+              </div>
+              <h3>How To Make Visual Studio Code Look Amazing</h3>
+              <div class="info-container">
+                <p class="info">Oct 20 · 7 min read</p>
+                <img
+                  class="desktop-star"
+                  src="./assets/imgs/svg/star.svg"
+                  alt="star"
+                />
+              </div>
             </div>
-            <h3>How To Make Visual Studio Code Look Amazing</h3>
-            <p class="info">Oct 20 · 7 min read</p>
-            <img
-              class="desktop-star"
-              src="./assets/imgs/svg/star.svg"
-              alt="star"
-            />
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
       <div id="third-section">
         <aside>
           <h2>DISCOVER MORE OF WHAT MATTERS TO YOU</h2>
-          <div>
+          <div id="buttons">
             <!-- inline-block -->
             <button>Programming</button>
             <button>Data Science</button>
@@ -9388,297 +9415,305 @@
         <section>
           <!-- ATTENTION!
              .hidden-dsk display none in desktop MQ -->
-          <!-- article 1 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img src="./assets/imgs/image07.jpeg" alt="Robert Roy Britt" />
-                <span>Robert Roy Britt</span>
-              </div>
-              <h3>How Old is Old?</h3>
+          <div id="articles">
+            <!-- article 1 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img
+                    src="./assets/imgs/image07.jpeg"
+                    alt="Robert Roy Britt"
+                  />
+                  <span>Robert Roy Britt</span>
+                </div>
+                <h3>How Old is Old?</h3>
 
-              <p class="description">
-                What we consider "old" changes dramatically with age, and our
-                perspectives can be predictive of how well we age
-              </p>
-              <div class="bottom-line">
-                <p class="info">Oct 27 · 5 min read ·</p>
-                <button class="tag">Aging</button>
-                <img src="./assets/imgs/svg/star.svg" alt="star" />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  What we consider "old" changes dramatically with age, and our
+                  perspectives can be predictive of how well we age
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Oct 27 · 5 min read ·</p>
+                  <button class="tag">Aging</button>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image08.jpeg" alt="old people?" />
-            </div>
-          </article>
-          <!-- article 2 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img
-                  src="./assets/imgs/image09.jpeg"
-                  alt="Taru Anniina Likanen"
-                />
-                <span>Taru Anniina Likanen</span>
+              <div class="article-img">
+                <img src="./assets/imgs/image08.jpeg" alt="old people?" />
               </div>
-              <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
+            </article>
+            <!-- article 2 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img
+                    src="./assets/imgs/image09.jpeg"
+                    alt="Taru Anniina Likanen"
+                  />
+                  <span>Taru Anniina Likanen</span>
+                </div>
+                <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
 
-              <p class="description">
-                Can you speak about your trauma if you don't look traumatized?
-              </p>
-              <div class="bottom-line">
-                <p class="info">Oct 24 · 6 min read ·</p>
-                <button class="tag">Health</button>
-                <img src="./assets/imgs/svg/star.svg" alt="star" />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  Can you speak about your trauma if you don't look traumatized?
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Oct 24 · 6 min read ·</p>
+                  <button class="tag">Health</button>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image10.jpeg" alt="Taylor Swift" />
-            </div>
-          </article>
-          <!-- article 3 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img
-                  src="./assets/imgs/image11.jpeg"
-                  alt="David Rodenas, Ph. D."
-                />
-                <span>David Rodenas, Ph. D.</span>
+              <div class="article-img">
+                <img src="./assets/imgs/image10.jpeg" alt="Taylor Swift" />
               </div>
-              <h3>Don't Screw Up, You Will Be Found Guilty</h3>
+            </article>
+            <!-- article 3 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img
+                    src="./assets/imgs/image11.jpeg"
+                    alt="David Rodenas, Ph. D."
+                  />
+                  <span>David Rodenas, Ph. D.</span>
+                </div>
+                <h3>Don't Screw Up, You Will Be Found Guilty</h3>
 
-              <p class="description">
-                Software Engineer, yours is the right to produce high-quality
-                work at all times, also the liability.
-              </p>
-              <div class="bottom-line">
-                <p class="info">Oct 15 · 5 min read ·</p>
-                <button class="tag">Software Engineering</button>
-                <img src="./assets/imgs/svg/star.svg" alt="star" />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  Software Engineer, yours is the right to produce high-quality
+                  work at all times, also the liability.
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Oct 15 · 5 min read ·</p>
+                  <button class="tag">Software Engineering</button>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image12.png" alt="People Drawing" />
-            </div>
-          </article>
-          <!-- article 4 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img src="./assets/imgs/image13.png" alt="Microsoft Design" />
-                <span>Microsoft Design</span>
+              <div class="article-img">
+                <img src="./assets/imgs/image12.png" alt="People Drawing" />
               </div>
-              <h3>Leave No Trace</h3>
+            </article>
+            <!-- article 4 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img src="./assets/imgs/image13.png" alt="Microsoft Design" />
+                  <span>Microsoft Design</span>
+                </div>
+                <h3>Leave No Trace</h3>
 
-              <p class="description">
-                How product designers can break from the status quo and help our
-                planel
-              </p>
-              <div class="bottom-line">
-                <p class="info">Oct 25 · 11 min read ·</p>
-                <button class="tag">Sustainability</button>
-                <img
-                  class="hide-dsk"
-                  src="./assets/imgs/svg/star.svg"
-                  alt="star"
-                />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  How product designers can break from the status quo and help
+                  our planel
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Oct 25 · 11 min read ·</p>
+                  <button class="tag">Sustainability</button>
+                  <img
+                    class="hide-dsk"
+                    src="./assets/imgs/svg/star.svg"
+                    alt="star"
+                  />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image14.png" alt="Mountains" />
-            </div>
-          </article>
-          <!-- article 5 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img src="./assets/imgs/image15.jpeg" alt="Scott H. Young" />
-                <span>Scott H. Young</span>
+              <div class="article-img">
+                <img src="./assets/imgs/image14.png" alt="Mountains" />
               </div>
-              <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+            </article>
+            <!-- article 5 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img src="./assets/imgs/image15.jpeg" alt="Scott H. Young" />
+                  <span>Scott H. Young</span>
+                </div>
+                <h3>Variability, Not Repetition, is the Key to Mastery</h3>
 
-              <p class="description">
-                Bruce Lee is reported to have said, "I fear not the man who has
-                practiced 10,000 kicks once, but the man who has practiced
-                one...
-              </p>
-              <div class="bottom-line">
-                <p class="info">Oct 26 · 7 min read ·</p>
-                <button class="tag">Learning</button>
-                <img src="./assets/imgs/svg/star.svg" alt="star" />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  Bruce Lee is reported to have said, "I fear not the man who
+                  has practiced 10,000 kicks once, but the man who has practiced
+                  one...
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Oct 26 · 7 min read ·</p>
+                  <button class="tag">Learning</button>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image16.jpg" alt="old people?" />
-            </div>
-          </article>
-          <!-- article 6 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img src="./assets/imgs/image17.png" alt="Paul A. DeStefano" />
-                <span>Paul A. DeStefano in Human Parts</span>
+              <div class="article-img">
+                <img src="./assets/imgs/image16.jpg" alt="old people?" />
               </div>
-              <h3>What I Overheard as an Escape Room Actor</h3>
+            </article>
+            <!-- article 6 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img
+                    src="./assets/imgs/image17.png"
+                    alt="Paul A. DeStefano"
+                  />
+                  <span>Paul A. DeStefano in Human Parts</span>
+                </div>
+                <h3>What I Overheard as an Escape Room Actor</h3>
 
-              <p class="description">
-                Lock a group of people in a room and you'll witness some
-                surprising confessions
-              </p>
-              <div class="bottom-line">
-                <p class="info">Jan 18, 2020 · 6 min read ·</p>
-                <button class="tag">Experiences</button>
-                <img src="./assets/imgs/svg/star.svg" alt="star" />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  Lock a group of people in a room and you'll witness some
+                  surprising confessions
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Jan 18, 2020 · 6 min read ·</p>
+                  <button class="tag">Experiences</button>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image18.jpeg" alt="old people?" />
-            </div>
-          </article>
-          <!-- article 7 -->
-          <article>
-            <div class="article-text">
-              <div class="author">
-                <img src="./assets/imgs/image19.jpeg" alt="Kim Scott" />
-                <span>Kim Scott</span>
+              <div class="article-img">
+                <img src="./assets/imgs/image18.jpeg" alt="old people?" />
               </div>
-              <h3>
-                6 Steps for Setting Measurable Goals to Avoid "Productivity
-                Paranoia"
-              </h3>
+            </article>
+            <!-- article 7 -->
+            <article>
+              <div class="article-text">
+                <div class="author">
+                  <img src="./assets/imgs/image19.jpeg" alt="Kim Scott" />
+                  <span>Kim Scott</span>
+                </div>
+                <h3>
+                  6 Steps for Setting Measurable Goals to Avoid "Productivity
+                  Paranoia"
+                </h3>
 
-              <p class="description">
-                With more people working in remote and hybrid environments than
-                ever before, company, team and individual goals must be
-                explicit...
-              </p>
-              <div class="bottom-line">
-                <p class="info">Oct 25 · 10 min read ·</p>
-                <button class="tag">Productivity</button>
-                <img
-                  class="hide-dsk"
-                  src="./assets/imgs/svg/star.svg"
-                  alt="star"
-                />
-                <button class="bookmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
-                  </svg>
-                </button>
+                <p class="description">
+                  With more people working in remote and hybrid environments
+                  than ever before, company, team and individual goals must be
+                  explicit...
+                </p>
+                <div class="bottom-line">
+                  <p class="info">Oct 25 · 10 min read ·</p>
+                  <button class="tag">Productivity</button>
+                  <img
+                    class="hide-dsk"
+                    src="./assets/imgs/svg/star.svg"
+                    alt="star"
+                  />
+                  <button class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="article-img">
-              <img src="./assets/imgs/image20.jpg" alt="old people?" />
-            </div>
-          </article>
+              <div class="article-img">
+                <img src="./assets/imgs/image20.jpg" alt="old people?" />
+              </div>
+            </article>
+          </div>
         </section>
       </div>
     </main>
