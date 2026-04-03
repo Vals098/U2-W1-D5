@@ -335,7 +335,6 @@ aside li {
     height: 100%;
   }
 
-  
   #trends {
     padding: 2em;
     display: flex;
@@ -343,7 +342,7 @@ aside li {
     flex-wrap: wrap;
     gap: 2rem;
   }
-  
+
   .trend {
     width: 45%;
   }
@@ -352,15 +351,15 @@ aside li {
     background-color: #ffc017;
     transition: background-color 0.3s ease;
   }
-  
+
   header.scrolled {
     background-color: white;
   }
-  
+
   header.scrolled button {
-  background-color: #1a8917;
-  color: white;
-}
+    background-color: #1a8917;
+    color: white;
+  }
 }
 
 /* desktop MEDIA QUERY */
@@ -371,10 +370,6 @@ aside li {
     padding: 2rem 5rem;
   }
 
-  #articles {
-    flex: 3;
-  }
-
   .trend {
     width: 30%;
   }
@@ -382,7 +377,7 @@ aside li {
   .hidden-dsk {
     display: none;
   }
-  
+
   .desktop-star {
     display: inline-block;
   }
@@ -391,17 +386,17 @@ aside li {
     gap: 3rem;
     align-items: flex-start;
     flex-direction: row-reverse;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem 1rem;
   }
 
-  aside {
-    flex: 1;
-    max-width: 350px;
-    flex-grow: 0.4;
+  #articles {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  /* non ho fatto in tempo a fixare */
-
+  aside {
+    flex-basis: 320px;
+  }
 }
