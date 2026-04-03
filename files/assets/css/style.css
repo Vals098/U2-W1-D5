@@ -335,15 +335,7 @@ aside li {
     height: 100%;
   }
 
-  header {
-    background-color: #ffc017;
-    transition: background-color 0.3s ease;
-  }
-
-  header.scrolled {
-    background-color: white;
-  }
-
+  
   #trends {
     padding: 2em;
     display: flex;
@@ -351,10 +343,24 @@ aside li {
     flex-wrap: wrap;
     gap: 2rem;
   }
-
+  
   .trend {
     width: 45%;
   }
+  /* event */
+  header {
+    background-color: #ffc017;
+    transition: background-color 0.3s ease;
+  }
+  
+  header.scrolled {
+    background-color: white;
+  }
+  
+  header.scrolled button {
+  background-color: #1a8917;
+  color: white;
+}
 }
 
 /* desktop MEDIA QUERY */
