@@ -34,7 +34,24 @@ button {
   border-radius: 25px;
   background-color: #191919;
   color: white;
+}
+
+ul li,
+button {
   cursor: pointer;
+}
+
+header ul li:hover {
+  color: #f2f2f2;
+}
+
+aside button:hover {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+aside ul li:hover {
+  color: #191919;
 }
 
 /* --------------------------- */
