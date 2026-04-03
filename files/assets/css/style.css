@@ -326,13 +326,16 @@ aside li {
     position: relative;
   }
 
-  #Ms,
-  .hiddenlinks {
+  #Ms {
     display: block;
     position: absolute;
     top: 0;
     right: -150px;
     height: 100%;
+  }
+
+  .hiddenlinks {
+    display: inline-block; /* 🔥 solo questo */
   }
 
   #trends {
